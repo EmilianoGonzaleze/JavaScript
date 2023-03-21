@@ -69,6 +69,12 @@ producto.vender()
 console.log(producto.vendido)
 */
 
+
+
+
+
+// Otro ejemplo
+
 class Cliente{
     constructor(nombre, direccion){
         this.nombre = nombre;
