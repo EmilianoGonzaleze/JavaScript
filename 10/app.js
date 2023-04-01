@@ -37,19 +37,16 @@ formulario.addEventListener("submit", (e) => {
 
   listaProductos.push(nuevoProducto)
 
-
+  mostrarEnDOM()
 
   formulario.reset()
 })
 
+
+
 function mostrarEnDOM(contenedor_productos, listaProductos) {
 
-    listaProductos.forEach(producto =>{
-        contenedor_productos.innerhtml += `<h3>Nombre: ${producto.nombre} </h3>
-    <p>Precio: ${producto.precio} </p>
-    <p>Cantidad: ${producto.cantidad} </p>`;
-
-    })
+  listaProductos.forEach(producto =>{contenedor_productos.innerhtml += `<h3>Nombre: ${producto.nombre} </h3> <p>Precio: ${producto.precio} </p> <p>Cantidad: ${producto.cantidad} </p>`})
   
 }
 
